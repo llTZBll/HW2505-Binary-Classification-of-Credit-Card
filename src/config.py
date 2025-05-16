@@ -33,7 +33,7 @@ LGB_PARAMS = {
     'kfold': 3,
     'n_estimators': 2000,
     'early_stopping_rounds': 100,
-    'max_evals': 500
+    'max_evals': 50
 }
 
 # 固定参数
