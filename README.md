@@ -52,7 +52,7 @@ project/
 
 ## 数据准备
 
-将原始数据集`train.csv`放入`data/`目录下。
+将原始数据集`train.csv`和`test.csv`放入`data/`目录下。
 
 ## 运行步骤
 
