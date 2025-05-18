@@ -45,7 +45,7 @@ project/
 ```bash
 conda create -n Credit_Card python=3.12
 conda activate Credit_Card
-
+```
 2. 安装依赖：
 
    ```bash
