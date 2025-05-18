@@ -42,7 +42,9 @@ project/
 ## 环境配置
 
 1. 创建虚拟环境（可选但推荐）
-
+```bash
+conda create -n Credit_Card python=3.12
+conda activate Credit_Card
 
 2. 安装依赖：
 
