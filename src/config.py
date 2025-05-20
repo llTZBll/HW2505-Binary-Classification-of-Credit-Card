@@ -23,7 +23,16 @@ os.makedirs(PLOTS_DIR, exist_ok=True)
 os.makedirs(REPORTS_DIR, exist_ok=True)
 
 # 文件路径
-MODEL_PATH = os.path.join(MODELS_DIR, 'final_model.txt')  # 模型保存路径
+def get_model_path(remark=''):
+    """生成带有时间和备注的模型保存路径"""
+    current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
+    if remark:
+        filename = f"model_{current_time}_{remark}.txt"
+    else:
+        filename = f"model_{current_time}.txt"
+    return os.path.join(MODELS_DIR, filename)
+
+#MODEL_PATH = get_model_path('final') # 模型保存路径
 PREDICTION_OUTPUT_PATH = os.path.join(REPORTS_DIR, 'predictions.csv')  # 预测结果路径
 OPTIMIZATION_RESULT_PATH = os.path.join(REPORTS_DIR, 'optimization_results.csv')  # 优化结果路径
 LOG_PATH = os.path.join(LOGS_DIR, f'log_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log')  # 日志路径
@@ -33,7 +42,7 @@ LGB_PARAMS = {
     'kfold': 3,
     'n_estimators': 2000,
     'early_stopping_rounds': 100,
-    'max_evals': 50
+    'max_evals': 10
 }
 
 # 固定参数

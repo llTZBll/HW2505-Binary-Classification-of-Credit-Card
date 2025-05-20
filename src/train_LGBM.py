@@ -29,25 +29,23 @@ def main():
 
     logger.info("开始执行主程序")
 
+    ######################   数据预处理   #######################################
     # 数据加载与预处理
     logger.info("开始数据加载与预处理")
     df = load_data(DATA_PATH)
     print(f"数据加载完成，形状: {df.shape}")
 
-    # 删除ID列（假设列名为'ID'）
+    # 删除ID列
     if 'ID' in df.columns:
         df = df.drop(columns=['ID'])
         print("已删除ID列")
-    elif df.columns[0] == 'ID':  # 如果第一列就是ID但没有列名
-        df = df.drop(columns=df.columns[0])
-        print("已删除第一列(ID列)")
 
     # 查看缺失值
     print("缺失值统计:")
     print(df.isnull().sum())
 
-    df = handle_missing_values(df)
-    df = encode_categorical_features(df)
+    df = fill_categorical_nan_with_mode(df)
+    df = label_encode_categorical_features(df)
 
     print("\n数据预处理完成，前5行:")
     print(df.head())
@@ -69,6 +67,8 @@ def main():
     print(f"训练集大小: {X_train.shape[0]}")
     print(f"测试集大小: {X_test.shape[0]}")
 
+    ######################  超参数优化  ##############################################
+
     # 初始化优化器
     logger.info("开始模型参数优化")
     optimizer = LGBBayesianOptimizer(
@@ -80,7 +80,7 @@ def main():
 
     # 加载数据并优化
     optimizer.load_data(pdf_train, selected_features, label)
-    best_params = optimizer.optimize(max_evals=LGB_PARAMS['max_evals'])
+    optimizer.optimize(max_evals=LGB_PARAMS['max_evals'])
 
     # 读取优化结果
     results = pd.read_csv(OPTIMIZATION_RESULT_PATH)
@@ -91,16 +91,11 @@ def main():
     print("\n最佳参数:")
     print(best_result['params'])
 
-    # 处理参数可能是字符串的情况
-    try:
-        params = eval(best_result['params']) if isinstance(best_result['params'], str) else best_result['params']
-        print(params)
-    except:
-        print("参数解析错误:", best_result['params'])
-
     # 绘制AUC变化趋势
     plot_optimization_progress(OPTIMIZATION_RESULT_PATH)
     logger.info("优化过程图表已保存")
+
+#########################  训练最终模型  ############################################
 
     # 从最佳结果中提取参数
     best_params = eval(best_result['params'])
@@ -125,6 +120,10 @@ def main():
     )
 
     # 保存模型
+    remark = "LGBM_max_evals="+ str(LGB_PARAMS['max_evals'])
+    get_model_path(remark)
+
+    MODEL_PATH = get_model_path(remark)  # 模型保存路径
     final_model.save_model(MODEL_PATH)
     logger.info(f"模型已保存至 {MODEL_PATH}")
 

@@ -9,9 +9,20 @@ def plot_optimization_progress(results_path):
     """绘制优化过程中的AUC变化"""
     results = pd.read_csv(results_path)
 
+    # 计算当前最大Validation AUC
+    results['max_valid_auc'] = results['valid_auc'].cummax()
+
     plt.figure(figsize=(12, 6))
     plt.plot(results['iteration'], results['valid_auc'], label='Validation AUC')
     plt.plot(results['iteration'], results['train_auc'], label='Train AUC')
+    plt.plot(results['iteration'], results['max_valid_auc'],
+             label='Max Validation AUC', linestyle='--', color='red')
+
+    # 标记最大值点
+    max_idx = results['valid_auc'].idxmax()
+    plt.scatter(results.loc[max_idx, 'iteration'], results.loc[max_idx, 'valid_auc'],
+                color='red', s=100, zorder=5)
+
     plt.xlabel('Iteration')
     plt.ylabel('AUC')
     plt.title('Bayesian Optimization Progress')

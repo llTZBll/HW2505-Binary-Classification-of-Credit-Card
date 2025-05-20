@@ -14,7 +14,6 @@
    + 优化器默认迭代次数：50次
    + 已经训练的模型和推理结果的迭代次数：500次
 
-如果本仓库对您的工作有帮助，请帮忙点亮star~ Thanks! :-D
 ## 项目结构
 
 ```
@@ -29,8 +28,8 @@ project/
 │  ├─ models/              # 模型相关代码
 │  │  └─ lgb_optimizer.py  # LightGBM优化器类
 │  ├─ config.py            # 全局配置文件
-│  ├─ train.py             # 主训练脚本
-│  ├─ predict.py           # 主运行脚本
+│  ├─ train_LGBM.py        # LGBM的训练脚本
+│  ├─ predict_LGBM.py      # LGBM的推理脚本
 │  └─ requirements.txt     # 依赖环境文件
 ├─ results/                # 结果输出文件夹
 │  ├─ models/              # 训练好的模型文件
@@ -43,10 +42,8 @@ project/
 ## 环境配置
 
 1. 创建虚拟环境（可选但推荐）
-```bash
-conda create -n Credit_Card python=3.12
-conda activate Credit_Card
-```
+
+
 2. 安装依赖：
 
    ```bash
@@ -55,7 +52,7 @@ conda activate Credit_Card
 
 ## 数据准备
 
-将原始数据集`train.csv`和`test.csv`放入`data/`目录下。
+将原始数据集`train.csv`放入`data/`目录下。
 
 ## 运行步骤
 
@@ -64,7 +61,7 @@ conda activate Credit_Card
 2. 执行训练程序（默认将使用优化器迭代超参数50次）：
 
    ```bash
-   python src/train.py
+   python src/train_LGBM.py
    ```
 
 3. 查看`train.py`结果：
@@ -77,7 +74,7 @@ conda activate Credit_Card
 4. 执行推理程序：
 
    ```bash
-   python src/predict.py
+   python src/predict_LGBM.py
    ```
 
 5. 查看推理结果：
