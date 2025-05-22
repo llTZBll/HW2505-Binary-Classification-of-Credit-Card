@@ -1,0 +1,29 @@
+2025-05-22 16:37:37,288 - __main__ - INFO - 开始执行主程序
+2025-05-22 16:37:37,289 - __main__ - INFO - 开始数据加载与预处理
+2025-05-22 16:37:37,961 - __main__ - INFO - 开始模型参数优化
+2025-05-22 16:37:37,985 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003090 seconds
+2025-05-22 16:37:37,986 - hyperopt.tpe - INFO - TPE using 0 trials
+2025-05-22 16:37:44,906 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003001 seconds
+2025-05-22 16:37:44,906 - hyperopt.tpe - INFO - TPE using 1/1 trials with best loss -0.874274
+2025-05-22 16:37:53,956 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:37:53,956 - hyperopt.tpe - INFO - TPE using 2/2 trials with best loss -0.874629
+2025-05-22 16:38:03,664 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002001 seconds
+2025-05-22 16:38:03,664 - hyperopt.tpe - INFO - TPE using 3/3 trials with best loss -0.874629
+2025-05-22 16:38:15,323 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002056 seconds
+2025-05-22 16:38:15,324 - hyperopt.tpe - INFO - TPE using 4/4 trials with best loss -0.874629
+2025-05-22 16:38:24,046 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:38:24,046 - hyperopt.tpe - INFO - TPE using 5/5 trials with best loss -0.874629
+2025-05-22 16:38:33,402 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002001 seconds
+2025-05-22 16:38:33,402 - hyperopt.tpe - INFO - TPE using 6/6 trials with best loss -0.874629
+2025-05-22 16:38:54,494 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.005184 seconds
+2025-05-22 16:38:54,494 - hyperopt.tpe - INFO - TPE using 7/7 trials with best loss -0.874629
+2025-05-22 16:39:06,730 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.004004 seconds
+2025-05-22 16:39:06,730 - hyperopt.tpe - INFO - TPE using 8/8 trials with best loss -0.874629
+2025-05-22 16:39:23,410 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.005514 seconds
+2025-05-22 16:39:23,410 - hyperopt.tpe - INFO - TPE using 9/9 trials with best loss -0.874642
+2025-05-22 16:39:43,053 - __main__ - INFO - 优化过程图表已保存
+2025-05-22 16:39:43,053 - __main__ - INFO - 开始训练最终模型
+2025-05-22 16:39:47,440 - __main__ - INFO - 模型已保存至 D:\Documents\GitHub\HW2505-Binary-Classification-of-Credit-Card\results\models\model_20250522_163947_LGBM_max_evals=10.txt
+2025-05-22 16:39:47,832 - __main__ - INFO - 最终模型测试AUC: 0.8741
+2025-05-22 16:39:48,191 - __main__ - INFO - 特征重要性分析已完成
+2025-05-22 16:39:48,191 - __main__ - INFO - 主程序执行完成

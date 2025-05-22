@@ -44,7 +44,7 @@ def main():
     print("缺失值统计:")
     print(df.isnull().sum())
 
-    df = fill_categorical_nan_with_mode(df)
+    df = fill_categorical_nan_with_unknown(df)
     df = label_encode_categorical_features(df)
 
     print("\n数据预处理完成，前5行:")

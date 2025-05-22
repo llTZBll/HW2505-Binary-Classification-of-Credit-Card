@@ -1,11 +1,11 @@
 import pandas as pd
 import lightgbm as lgb
-from config import TEST_DATA_PATH, MODEL_PATH, PREDICTION_OUTPUT_PATH
+from config import TEST_DATA_PATH, PREDICTION_OUTPUT_PATH
 from utils.preprocessing import (
     load_data,
     fill_categorical_nan_with_mode,
     label_encode_categorical_features,
-    prepare_data
+    prepare_data, fill_categorical_nan_with_unknown
 )
 import logging
 import os
@@ -27,6 +27,7 @@ def make_predictions():
     """执行完整的预测流程"""
 
     # 1. 加载模型
+    MODEL_PATH ="../results/models/model_20250522_165129_LGBM_max_evals=50.txt"
     model = load_model(MODEL_PATH)
 
     # 2. 加载测试数据
@@ -44,7 +45,7 @@ def make_predictions():
 
     # 4. 应用与训练相同的预处理
     logger.info("开始数据预处理")
-    df_test = fill_categorical_nan_with_mode(df_test)
+    df_test = fill_categorical_nan_with_unknown(df_test)
     df_test = label_encode_categorical_features(df_test)
 
     # 5. 准备特征 (使用与训练相同的特征列)
