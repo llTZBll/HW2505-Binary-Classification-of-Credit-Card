@@ -1,0 +1,109 @@
+2025-05-22 16:41:09,182 - __main__ - INFO - 开始执行主程序
+2025-05-22 16:41:09,183 - __main__ - INFO - 开始数据加载与预处理
+2025-05-22 16:41:09,709 - __main__ - INFO - 开始模型参数优化
+2025-05-22 16:41:09,723 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002083 seconds
+2025-05-22 16:41:09,723 - hyperopt.tpe - INFO - TPE using 0 trials
+2025-05-22 16:41:16,786 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003000 seconds
+2025-05-22 16:41:16,786 - hyperopt.tpe - INFO - TPE using 1/1 trials with best loss -0.874274
+2025-05-22 16:41:25,973 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:41:25,974 - hyperopt.tpe - INFO - TPE using 2/2 trials with best loss -0.874629
+2025-05-22 16:41:34,842 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003038 seconds
+2025-05-22 16:41:34,842 - hyperopt.tpe - INFO - TPE using 3/3 trials with best loss -0.874629
+2025-05-22 16:41:46,360 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:41:46,360 - hyperopt.tpe - INFO - TPE using 4/4 trials with best loss -0.874629
+2025-05-22 16:41:54,261 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:41:54,261 - hyperopt.tpe - INFO - TPE using 5/5 trials with best loss -0.874629
+2025-05-22 16:42:02,921 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.001999 seconds
+2025-05-22 16:42:02,921 - hyperopt.tpe - INFO - TPE using 6/6 trials with best loss -0.874629
+2025-05-22 16:42:15,077 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:42:15,077 - hyperopt.tpe - INFO - TPE using 7/7 trials with best loss -0.874629
+2025-05-22 16:42:21,199 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003093 seconds
+2025-05-22 16:42:21,199 - hyperopt.tpe - INFO - TPE using 8/8 trials with best loss -0.874629
+2025-05-22 16:42:30,806 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:42:30,807 - hyperopt.tpe - INFO - TPE using 9/9 trials with best loss -0.874642
+2025-05-22 16:42:41,980 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002021 seconds
+2025-05-22 16:42:41,981 - hyperopt.tpe - INFO - TPE using 10/10 trials with best loss -0.874642
+2025-05-22 16:42:49,055 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002388 seconds
+2025-05-22 16:42:49,055 - hyperopt.tpe - INFO - TPE using 11/11 trials with best loss -0.874642
+2025-05-22 16:42:59,308 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.001999 seconds
+2025-05-22 16:42:59,308 - hyperopt.tpe - INFO - TPE using 12/12 trials with best loss -0.874642
+2025-05-22 16:43:08,577 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003000 seconds
+2025-05-22 16:43:08,577 - hyperopt.tpe - INFO - TPE using 13/13 trials with best loss -0.874642
+2025-05-22 16:43:16,692 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:43:16,692 - hyperopt.tpe - INFO - TPE using 14/14 trials with best loss -0.874642
+2025-05-22 16:43:25,216 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:43:25,216 - hyperopt.tpe - INFO - TPE using 15/15 trials with best loss -0.874642
+2025-05-22 16:43:33,481 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002028 seconds
+2025-05-22 16:43:33,482 - hyperopt.tpe - INFO - TPE using 16/16 trials with best loss -0.874642
+2025-05-22 16:43:49,591 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002041 seconds
+2025-05-22 16:43:49,591 - hyperopt.tpe - INFO - TPE using 17/17 trials with best loss -0.874642
+2025-05-22 16:44:01,581 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003204 seconds
+2025-05-22 16:44:01,581 - hyperopt.tpe - INFO - TPE using 18/18 trials with best loss -0.874642
+2025-05-22 16:44:10,545 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.001999 seconds
+2025-05-22 16:44:10,546 - hyperopt.tpe - INFO - TPE using 19/19 trials with best loss -0.874642
+2025-05-22 16:44:19,618 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003000 seconds
+2025-05-22 16:44:19,618 - hyperopt.tpe - INFO - TPE using 20/20 trials with best loss -0.874642
+2025-05-22 16:44:26,762 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:44:26,762 - hyperopt.tpe - INFO - TPE using 21/21 trials with best loss -0.874642
+2025-05-22 16:44:35,199 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003000 seconds
+2025-05-22 16:44:35,199 - hyperopt.tpe - INFO - TPE using 22/22 trials with best loss -0.874642
+2025-05-22 16:44:44,336 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:44:44,336 - hyperopt.tpe - INFO - TPE using 23/23 trials with best loss -0.874642
+2025-05-22 16:44:55,219 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.005551 seconds
+2025-05-22 16:44:55,219 - hyperopt.tpe - INFO - TPE using 24/24 trials with best loss -0.874644
+2025-05-22 16:45:13,618 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.004151 seconds
+2025-05-22 16:45:13,619 - hyperopt.tpe - INFO - TPE using 25/25 trials with best loss -0.874644
+2025-05-22 16:45:46,257 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.006117 seconds
+2025-05-22 16:45:46,258 - hyperopt.tpe - INFO - TPE using 26/26 trials with best loss -0.874644
+2025-05-22 16:46:03,540 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.005223 seconds
+2025-05-22 16:46:03,540 - hyperopt.tpe - INFO - TPE using 27/27 trials with best loss -0.874655
+2025-05-22 16:46:16,363 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002506 seconds
+2025-05-22 16:46:16,363 - hyperopt.tpe - INFO - TPE using 28/28 trials with best loss -0.874655
+2025-05-22 16:46:35,692 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.001438 seconds
+2025-05-22 16:46:35,693 - hyperopt.tpe - INFO - TPE using 29/29 trials with best loss -0.874655
+2025-05-22 16:46:52,447 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:46:52,447 - hyperopt.tpe - INFO - TPE using 30/30 trials with best loss -0.874655
+2025-05-22 16:47:05,155 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.001647 seconds
+2025-05-22 16:47:05,157 - hyperopt.tpe - INFO - TPE using 31/31 trials with best loss -0.874747
+2025-05-22 16:47:21,439 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.001644 seconds
+2025-05-22 16:47:21,439 - hyperopt.tpe - INFO - TPE using 32/32 trials with best loss -0.874747
+2025-05-22 16:47:33,126 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:47:33,127 - hyperopt.tpe - INFO - TPE using 33/33 trials with best loss -0.874747
+2025-05-22 16:47:55,481 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002125 seconds
+2025-05-22 16:47:55,481 - hyperopt.tpe - INFO - TPE using 34/34 trials with best loss -0.874747
+2025-05-22 16:48:09,056 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003168 seconds
+2025-05-22 16:48:09,056 - hyperopt.tpe - INFO - TPE using 35/35 trials with best loss -0.874747
+2025-05-22 16:48:23,165 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002008 seconds
+2025-05-22 16:48:23,166 - hyperopt.tpe - INFO - TPE using 36/36 trials with best loss -0.874747
+2025-05-22 16:48:33,070 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003014 seconds
+2025-05-22 16:48:33,071 - hyperopt.tpe - INFO - TPE using 37/37 trials with best loss -0.874747
+2025-05-22 16:48:42,770 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003183 seconds
+2025-05-22 16:48:42,770 - hyperopt.tpe - INFO - TPE using 38/38 trials with best loss -0.874747
+2025-05-22 16:49:01,134 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.005092 seconds
+2025-05-22 16:49:01,134 - hyperopt.tpe - INFO - TPE using 39/39 trials with best loss -0.874747
+2025-05-22 16:49:18,150 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002999 seconds
+2025-05-22 16:49:18,151 - hyperopt.tpe - INFO - TPE using 40/40 trials with best loss -0.874747
+2025-05-22 16:49:32,842 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.004209 seconds
+2025-05-22 16:49:32,843 - hyperopt.tpe - INFO - TPE using 41/41 trials with best loss -0.874747
+2025-05-22 16:49:51,295 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002073 seconds
+2025-05-22 16:49:51,296 - hyperopt.tpe - INFO - TPE using 42/42 trials with best loss -0.874747
+2025-05-22 16:49:59,092 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:49:59,092 - hyperopt.tpe - INFO - TPE using 43/43 trials with best loss -0.874747
+2025-05-22 16:50:06,705 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002423 seconds
+2025-05-22 16:50:06,705 - hyperopt.tpe - INFO - TPE using 44/44 trials with best loss -0.874747
+2025-05-22 16:50:22,994 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:50:22,994 - hyperopt.tpe - INFO - TPE using 45/45 trials with best loss -0.874747
+2025-05-22 16:50:32,991 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003000 seconds
+2025-05-22 16:50:32,991 - hyperopt.tpe - INFO - TPE using 46/46 trials with best loss -0.874747
+2025-05-22 16:50:46,129 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.003036 seconds
+2025-05-22 16:50:46,129 - hyperopt.tpe - INFO - TPE using 47/47 trials with best loss -0.874747
+2025-05-22 16:51:02,176 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002014 seconds
+2025-05-22 16:51:02,177 - hyperopt.tpe - INFO - TPE using 48/48 trials with best loss -0.874747
+2025-05-22 16:51:15,449 - hyperopt.tpe - INFO - build_posterior_wrapper took 0.002000 seconds
+2025-05-22 16:51:15,449 - hyperopt.tpe - INFO - TPE using 49/49 trials with best loss -0.874747
+2025-05-22 16:51:27,583 - __main__ - INFO - 优化过程图表已保存
+2025-05-22 16:51:27,583 - __main__ - INFO - 开始训练最终模型
+2025-05-22 16:51:29,752 - __main__ - INFO - 模型已保存至 D:\Documents\GitHub\HW2505-Binary-Classification-of-Credit-Card\results\models\model_20250522_165129_LGBM_max_evals=50.txt
+2025-05-22 16:51:29,953 - __main__ - INFO - 最终模型测试AUC: 0.8746
+2025-05-22 16:51:30,081 - __main__ - INFO - 特征重要性分析已完成
+2025-05-22 16:51:30,082 - __main__ - INFO - 主程序执行完成

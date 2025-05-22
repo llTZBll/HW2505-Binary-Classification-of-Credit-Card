@@ -33,7 +33,7 @@ def get_model_path(remark=''):
     return os.path.join(MODELS_DIR, filename)
 
 #MODEL_PATH = get_model_path('final') # 模型保存路径
-PREDICTION_OUTPUT_PATH = os.path.join(REPORTS_DIR, 'predictions.csv')  # 预测结果路径
+PREDICTION_OUTPUT_PATH = os.path.join(REPORTS_DIR, 'predictions_2.csv')  # 预测结果路径
 OPTIMIZATION_RESULT_PATH = os.path.join(REPORTS_DIR, 'optimization_results.csv')  # 优化结果路径
 LOG_PATH = os.path.join(LOGS_DIR, f'log_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log')  # 日志路径
 
@@ -42,7 +42,7 @@ LGB_PARAMS = {
     'kfold': 3,
     'n_estimators': 2000,
     'early_stopping_rounds': 100,
-    'max_evals': 10
+    'max_evals': 50
 }
 
 # 固定参数

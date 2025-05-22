@@ -20,6 +20,10 @@ def fill_categorical_nan_with_mode(df):
     df['Credit_Product'].fillna(df['Credit_Product'].mode()[0], inplace=True)
     return df
 
+def fill_categorical_nan_with_unknown(df):
+    """使用'Unknown'填充分类特征中的缺失值"""
+    df['Credit_Product'] = df['Credit_Product'].fillna('Unknown')
+    return df
 
 ##############  数据编码函数  ################################################################################
 def label_encode_categorical_features(df: pd.DataFrame) -> pd.DataFrame:
